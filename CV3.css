@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    background-color: #402820;
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --fontcolor-primary: white;
+    --fontcolor-secondary: #FD641D;
+
+}   
+
+
+/*shape*/
+
+.bundaran-header-kiri{
+        position: absolute;
+        top: 12cm;
+        left: -2cm;
+        width: 200px;
+        height: 100px; /* as the half of the width */
+        background-color: rgb(187, 90, 6);
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border-bottom: 0;
+        rotate: 90deg;
+    
+}
+.bundaran-header-kanan{
+    position: absolute;
+    top: 12cm;
+    right: -2cm;
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: rgb(187, 90, 6);
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border-bottom: 0;
+    rotate: 270deg;
+    
+}
+.garis-pendidikan{
+    position:relative;
+    top: 19cm;
+}
+
+.lingkarang-list-pendidikan-1{
+    position: absolute;
+    top: 37.15cm;
+    left: 18cm;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FD641D;
+}
+.lingkarang-list-pendidikan-2{
+    position: absolute;
+    top: 37.15cm;
+    left: 26.5cm;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FD641D;
+}
+.lingkarang-list-pendidikan-3{
+    position: absolute;
+    top: 37.15cm;
+    left: 34.3cm;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FD641D;
+}
+
+
+
+
+/*Style page*/
+#nav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 1.6cm;
+    gap: 6cm;  
+}
+    .logo-name {
+        color: #FD641D;
+        
+        font-weight: 700;
+    }
+    #nav ul{
+        text-decoration: none;
+        list-style: none;
+    }
+    #nav li{
+        display: inline;
+        margin-right: 20px;
+        padding: 12px;
+        
+    }
+    #nav li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        transition: 0s, 0.5s;
+    }
+#nav li a:hover{
+        border-bottom:2px solid ;
+        color: #FD641D;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+
+
+
+    .kontak p{
+        font-weight: 400;
+        color: #FD641D;
+        background-color: white;
+        border-radius: 66px;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        justify-content: center;
+        transition: 0s, 1s;
+        font-weight: 500;
+
+    }
+    .kontak {
+        text-decoration: none;
+        color: #FD641D;
+        font-weight: 700;
+    }
+    .kontak :hover{
+        background-color: #852A00;
+        border: none;
+        color: #FD641D;
+        transition: 0.5s;
+    }
+    .kontak a{
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5cm;
+    padding: 12px;
+    gap: 2cm;
+}
+#profile img{
+        max-width: 7cm;
+        border-radius: 12px;
+}
+.deskripsi-profile{
+        color: white;
+        font-weight: 400;
+    }
+.deskripsi-profile h1{
+    font-size: 2rem;
+}
+.deskripsi-profile h1 span{
+    color: #FD641D;
+    font-size: 1em;
+}
+.deskripsi-profile h2 span{
+    color: #FD641D;
+    font-size: 1em;
+} 
+.deskripsi-profile button{
+    text-decoration: none;
+    color: var(--fontcolor-primary);
+    background-color: var(--fontcolor-secondary);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 12px;
+    border: none;
+}
+.deskripsi-profile button:hover{
+    background-color: #852A00;
+    color: var(--fontcolor-primary);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#pendidikan{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+    padding-top: 9cm;
+
+}
+.pendidikan-header{
+    text-align: center;
+    justify-content: center;
+    color: var(--fontcolor-primary);
+
+
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+.pendidikan-keterangan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2.5cm;
+    margin-right: 1.9cm;
+    gap: 4cm;
+
+}
+.pendidikan-smp{
+    color: var(--fontcolor-primary);
+    justify-content: center;
+    text-align: center;
+
+}
+.pendidikan-smp span{
+    color: var(--fontcolor-secondary);
+}
+
+.pendidikan-sma{
+    color: var(--fontcolor-primary);
+    justify-content: center;
+    text-align: center;
+
+}
+.pendidikan-sma span{
+    color: var(--fontcolor-secondary);
+}
+.pendidikan-kuliah{
+    color: var(--fontcolor-primary);
+    justify-content: center;
+    text-align: center;
+
+}
+.pendidikan-kuliah span{
+    color: var(--fontcolor-secondary);
+}
+
+
+
+
+#kontak{
+    margin-top: 7cm;
+    justify-content: center;
+    align-items: center;
+}
+#kontak h1{
+    text-align: center;
+    color: var(--fontcolor-primary);
+    font-weight: 700;
+    font-size: 2em;
+}
+.gambar-logo-ndf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gambar-logo-ndf img{
+    max-width: 2cm;
+    border-radius: 12px;
+}
+.kontak-sosialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1cm;
+
+    margin-top: 30px;
+}
+
+.sosialmedia-instagramicon img,
+.sosialmedia-linkedinicon img{
+    width: 42px;
+    height: 42px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+#keahlian{
+    justify-content: center; /* Posisikan anak ke tengah secara horizontal */
+    align-items: center;      /* (opsional) Tengah secara vertikal jika dibutuhkan */
+    margin: 2em 12em;
+    padding: 12em 12em;
+}
+#keahlian h1{
+    color: var(--fontcolor-primary);
+    font-weight: 700;
+    font-size: 2em;
+
+}
+#keahlian p{
+    color: var(--fontcolor-primary);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+.keahlian-list{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+.keahlian-list-web{
+    gap: 1em;
+    background-color: #FD641D;
+    padding: 1em;
+    border-radius: 12px;
+}
+.keahlian-list-web p{
+    color: var(--fontcolor-primary);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.keahlian-list-web p span{
+    color: linear-gradient(to right, #FD641D, #852A00);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.keahlian-list-web ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+
+    color: var(--fontcolor-primary);
+}
+.keahlian-list-web:hover{
+    background-color: #852A00;
+    color: var(--fontcolor-primary);
+    transition: 0.5s;
+}
+
+.keahlian-list-jaringan{
+    color: var(--fontcolor-primary);
+    font-weight: 700;
+    background-color: #FD641D;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.keahlian-list-jaringan ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+.keahlian-list-jaringan:hover{
+    background-color: #852A00;
+    color: var(--fontcolor-primary);
+    transition: 0.5s;
+}
+
+
