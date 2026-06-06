@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        
+        <title>Journal</title>
+    </head>
+    <body>
+        <section id="nav">
+            <div class="logo">
+                <p>- NDF -</p>
+            </div>
+
+            <!-- Hamburger button (muncul di HP) -->
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#nav">Home</a></li>
+                    <li><a href="#perkenalan">Perkenalan</a></li>
+                    <li><a href="#isi-journal">Isi Journal</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="header">
+            <h1 class="header-h1">Hi! I'm Nadzif Hasan</h1>
+            <p class="header-p">I'm Network Engineer and Web Develpement</p>
+            <button class="header-btn">Contact Me</button>
+        </section>
+
+        <section id="perkenalan">
+            <h2 class="perkenalan-h2">Introduction</h2>
+            <p class="perkenalan-p">
+                I am a Telecommunications Engineering student at Telkom University. My expertise lies in website
+                development using HTML, CSS, JavaScript, and React. In addition to website development, I am skilled
+                in IP address creation, subnetting, IP configuration, and other related settings. My career interest
+                is in IP engineering.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2 class="education-h2">Education</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="education-circle-1"></div>
+                        <div class="education-1">
+                            <h3>2017 - 2020</h3>
+                            <p>Al-Azhar Syifa Budi Cibubur Cileungsi High School</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="education-circle-2"></div>
+                        <div class="education-2">
+                            <h3>2020 - 2023</h3>
+                            <p>Cileungsi 1 High School: Science Class</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="education-circle-3"></div>
+                        <div class="education-3">
+                            <h3>2023 - Now</h3>
+                            <p>Telkom University: Telecommunications Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+        }
+    </script>
+</html>
+
+
+
+
+
+ <!-- <section id="isi-journal">
+        <h2>Isi</h2>
+        <div class="isi-journal-n">
+            <h3>
+                06-06-2026
+            </h3>
+            <p>
+                Gua itu memiliki kegemaran yaitu melihat pesawat di aplikasi FlightRadar. Bagi yang belum tau, FlightRadar 24 itu sebuah aplikasi yang memantau lalu lintas pesawat.
+                Kebiasaan yang gua lakukan adalah ketika ada suara pesawat diatas, gua langsung buka aplikasi flight radar dan langsung keluar rumah atau keluar kos buat ngeliat pesawat. Menurut orang "kayak anak kecil banget", "halah.. cuman pesawat doang", Bukan... menurut gua itu adalah rasa cinta dan sukanya lu ke sesuatu yang lu senangi.
+                Engga tau kenapa itu secara spontan, keluar dari diri gua sendiri. Seperti sudah menjadi kebiasaan. Maskapai yang gua senang adalah <b style="color: blue;">Singapore Airline</b>. Kenapa maskapai ini yang gua senangi? karena maskapai ini adalah maskapai pertama yang membawa gua ke belahan bumi yang berbeda. Dimana lu engga ngeti bahasanya, budayanya, dan kebiasaannya.
+                Menurut gua maskapai ini itu "Kenangan yang harus diukir terus-menerus". 
+            </p>
+        </div>
+                <div class="isi-journal-n">
+            <h3>
+                06-06-2026
+            </h3>
+            <p>
+                Gua itu memiliki kegemaran yaitu melihat pesawat di aplikasi FlightRadar. Bagi yang belum tau, FlightRadar 24 itu sebuah aplikasi yang memantau lalu lintas pesawat.
+                Kebiasaan yang gua lakukan adalah ketika ada suara pesawat diatas, gua langsung buka aplikasi flight radar dan langsung keluar rumah atau keluar kos buat ngeliat pesawat. Menurut orang "kayak anak kecil banget", "halah.. cuman pesawat doang", Bukan... menurut gua itu adalah rasa cinta dan sukanya lu ke sesuatu yang lu senangi.
+                Engga tau kenapa itu secara spontan, keluar dari diri gua sendiri. Seperti sudah menjadi kebiasaan. Maskapai yang gua senang adalah <b style="color: blue;">Singapore Airline</b>. Kenapa maskapai ini yang gua senangi? karena maskapai ini adalah maskapai pertama yang membawa gua ke belahan bumi yang berbeda. Dimana lu engga ngerti bahasanya, budayanya, dan kebiasaannya.
+                Menurut gua maskapai ini itu "Kenangan yang harus diukir terus-menerus". 
+            </p>
+        </div>
+    </section> -->

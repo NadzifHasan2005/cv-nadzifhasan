@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --font-1: 'Roboto', sans-serif;
+    --font-2: 'Inria Serif', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-1);
+}
+
+/* ===== NAV ===== */
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 0px 0px 9px 10px;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.logo p {
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.menu {
+    margin-left: 3cm;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.3s ease;
+    color: black;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    color: black;
+    font-size: 1.2em;
+    gap: 4em;
+}
+
+.menu li a:hover {
+    border-bottom: 1.5px solid black;
+    transition: 0.3s;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.3em;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+
+/* ===== HEADER ===== */
+#header {
+    text-align: center;
+    padding: 12em;
+    margin: 3em;
+}
+
+.header-h1 {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: var(--font-2);
+}
+
+.header-p {
+    font-size: 1.5em;
+    font-family: var(--font-2);
+}
+
+.header-btn {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    font-family: var(--font-2);
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/* ===== PERKENALAN ===== */
+#perkenalan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 2cm;
+    max-width: 1000px;
+    margin: 1em auto;
+    font-family: var(--font-2);
+}
+
+.perkenalan-h2 {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.perkenalan-p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+
+/* ===== EDUCATION ===== */
+#education {
+    margin: 4cm;
+    font-family: var(--font-2);
+}
+
+.education-h2 {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Timeline wrapper */
+.timeline {
+    position: relative;
+    width: 100%;
+}
+
+/* Garis horizontal */
+.timeline-line {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    z-index: 1;
+}
+
+/* Item wrapper */
+.timeline-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 160px;
+}
+
+/* Circle */
+.education-circle-1,
+.education-circle-2,
+.education-circle-3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    flex-shrink: 0;
+    margin-bottom: 0.8em;
+}
+
+/* Teks */
+.education-1,
+.education-2,
+.education-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-1 h3,
+.education-2 h3,
+.education-3 h3 {
+    font-size: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.education-1 p,
+.education-2 p,
+.education-3 p {
+    font-size: 0.85em;
+    margin-top: 0.3em;
+}
+
+
+/* ===================== TABLET (max 768px) ===================== */
+@media (max-width: 768px) {
+    #nav {
+        flex-wrap: wrap;
+        gap: 0.5em;
+        justify-content: center;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    #header {
+        padding: 6em 2em;
+        margin: 1em;
+    }
+
+    .header-h1 { font-size: 2em; }
+    .header-p  { font-size: 1.2em; }
+
+    #perkenalan {
+        flex-direction: column;
+        gap: 1em;
+        margin: 2em 1.5em;
+    }
+
+    .perkenalan-h2 { font-size: 1.6em; white-space: normal; }
+
+    #education { margin: 2em 1.5em; }
+
+    .timeline-item { max-width: 120px; }
+
+    .education-1 h3,
+    .education-2 h3,
+    .education-3 h3 { font-size: 0.85em; white-space: normal; }
+
+    .education-1 p,
+    .education-2 p,
+    .education-3 p  { font-size: 0.75em; }
+}
+
+
+/* ===================== HANDPHONE (max 480px) ===================== */
+@media (max-width: 480px) {
+
+    /* Nav hamburger */
+    #nav {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1em;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid black;
+        z-index: 999;
+        margin-left: 0;
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+        gap: 1em;
+    }
+
+    #header {
+        padding: 4em 1em;
+        margin: 0.5em;
+    }
+
+    .header-h1 { font-size: 1.6em; }
+    .header-p  { font-size: 1em; }
+    .header-btn { font-size: 1em; }
+
+    #perkenalan {
+        flex-direction: column;
+        margin: 1.5em 1em;
+        gap: 1em;
+    }
+
+    .perkenalan-h2 { font-size: 1.4em; white-space: normal; }
+    .perkenalan-p  { font-size: 1em; }
+
+    #education { margin: 1.5em 1em; }
+    .education-h2 { font-size: 1.4em; }
+
+    /* Timeline vertikal di HP */
+    .timeline-line {
+        top: 0;
+        left: 20px;
+        width: 3px;
+        height: 100%;
+    }
+
+    .timeline-items {
+        flex-direction: column;
+        gap: 2em;
+        padding-left: 3em;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 100%;
+        gap: 1em;
+        position: relative;
+    }
+
+    .education-circle-1,
+    .education-circle-2,
+    .education-circle-3 {
+        position: absolute;
+        left: -3em;
+        top: 0;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .education-1,
+    .education-2,
+    .education-3 {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
