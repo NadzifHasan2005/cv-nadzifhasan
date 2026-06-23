@@ -87,9 +87,12 @@ body {
 
 /* ===== HEADER ===== */
 #header {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 12em;
     margin: 3em;
+    
 }
 
 .header-h1 {
@@ -98,7 +101,7 @@ body {
     font-family: var(--font-1);
 }
 
-.header-p {
+.header-1 {
     font-size: 1.5em;
     font-family: var(--font-1);
 }
@@ -119,6 +122,10 @@ body {
     background-color: black;
     color: white;
     transition: 0.3s;
+}
+.header-2 img{
+    width: 12cm;
+    border-radius: 9em;
 }
 
 
